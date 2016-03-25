@@ -1,0 +1,1056 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: false
+  },
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    equationNumbers: {
+      autoNumber: "AMS",
+    },
+    unicode: {
+      fonts: "STIXGeneral,'Arial Unicode MS'"
+    }
+  },
+  showProcessingMessages: false
+});
+</script>
+<title>初学Hadoop之——Hadoop-2.6.0单机配置和伪分布式配置</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-初学hadoop之一-hadoop单机和伪分布式配置" class="anchor" href="#%E5%88%9D%E5%AD%A6hadoop%E4%B9%8B%E4%B8%80-hadoop%E5%8D%95%E6%9C%BA%E5%92%8C%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E9%85%8D%E7%BD%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>初学Hadoop之一： Hadoop单机和伪分布式配置</h1>
+
+<h4>
+<a id="user-content-参考httpblogcsdnnetggz631047367articledetails42426391-2016120-" class="anchor" href="#%E5%8F%82%E8%80%83httpblogcsdnnetggz631047367articledetails42426391-2016120-" aria-hidden="true"><span class="octicon octicon-link"></span></a>参考：<a href="http://blog.csdn.net/ggz631047367/article/details/42426391">http://blog.csdn.net/ggz631047367/article/details/42426391</a> <div align="right">2016/1/20 </div>
+</h4>
+
+<hr>
+
+<h4>
+<a id="user-content-机器说明" class="anchor" href="#%E6%9C%BA%E5%99%A8%E8%AF%B4%E6%98%8E" aria-hidden="true"><span class="octicon octicon-link"></span></a>机器说明</h4>
+
+<p>ThinkPad T450 笔记本4G内存，64位windows10
+通过VirtualBox安装32位的ubuntu-12.04.5-desktop-i386 分配1G内存
+hadoop-2.6.0，JDK_1.7
+其中遇到了很多问题，重装了两次系统，现在将成功经验说来：</p>
+
+<h3>
+<a id="user-content-0-安装virtualbox和unbuntu虚拟环境" class="anchor" href="#0-%E5%AE%89%E8%A3%85virtualbox%E5%92%8Cunbuntu%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>0. 安装VirtualBox和unbuntu虚拟环境</h3>
+
+<p>略</p>
+
+<h3>
+<a id="user-content-1-在ubuntu下创建hadoop用户组和用户" class="anchor" href="#1-%E5%9C%A8ubuntu%E4%B8%8B%E5%88%9B%E5%BB%BAhadoop%E7%94%A8%E6%88%B7%E7%BB%84%E5%92%8C%E7%94%A8%E6%88%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 在Ubuntu下创建hadoop用户组和用户</h3>
+
+<p>hadoop的管理员最好就是以后要登录桌面环境运行eclipse的用户，否则后面会有拒绝读写的问题出现。当然不是也有办法办法解决。</p>
+
+<p>创建hadoop用户组，并创建hadoop用户后增加权限：</p>
+
+<pre><code>sudo addgroup hadoop  
+sudo adduser -ingroup hadoop hadoop  
+sudo vim /etc/sudoers 
+</code></pre>
+
+<p>在root   ALL=(ALL:ALL)   ALL下添加hadoop   ALL=(ALL:ALL)  ALL.</p>
+
+<h3>
+<a id="user-content-2-在ubuntu下安装jdk17" class="anchor" href="#2-%E5%9C%A8ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85jdk17" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. 在Ubuntu下安装JDK1.7</h3>
+
+<ul>
+<li>下载：
+百度JDK1.7官方版，然后进入官方链接进行下载，需要同意其条约，下载jdk-7u79-linux-i586.tar.gz，要注意，不能用wget通过网址直接下载。</li>
+<li>解压：</li>
+</ul>
+
+<pre><code>sudo mkdir /usr/lib/jvm
+sudo tar zxvf /home/adam/Downloads/jdk-7u79-linux-i586.tar.gz -C /usr/lib/jvm
+</code></pre>
+
+<ul>
+<li>修改环境变量：</li>
+</ul>
+
+<pre><code>sudo vim /etc/profile 
+</code></pre>
+
+<p>然后在后面添加</p>
+
+<pre><code>export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_79
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH 
+</code></pre>
+
+<p>然后执行</p>
+
+<pre><code>source /etc/profile 
+</code></pre>
+
+<h3>
+<a id="user-content-3-安装ssh服务" class="anchor" href="#3-%E5%AE%89%E8%A3%85ssh%E6%9C%8D%E5%8A%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 安装ssh服务</h3>
+
+<pre><code>sudo apt-get install ssh openssh-server
+</code></pre>
+
+<ul>
+<li>建立ssh无密码登录本机
+切换到hadoop用户，执行以下命令：</li>
+</ul>
+
+<pre><code>su - hadoop
+</code></pre>
+
+<p>ssh生成密钥有rsa和dsa两种生成方式，默认情况下采用rsa方式。</p>
+
+<ul>
+<li>创建ssh-key，，这里我们采用rsa方式：</li>
+</ul>
+
+<pre><code>ssh-keygen -t rsa -P "" （注：回车后会在~/.ssh/下生成两个文件：id_rsa和id_rsa.pub这两个文件是成对出现的）  
+</code></pre>
+
+<ul>
+<li>进入~/.ssh/目录下，将id_rsa.pub追加到authorized_keys授权文件中，开始是没有authorized_keys文件的;</li>
+</ul>
+
+<pre><code>cd ~/.ssh  
+cat id_rsa.pub &gt;&gt; authorized_keys （完成后就可以无密码登录本机了。）  
+</code></pre>
+
+<ul>
+<li>登录localhost验证：</li>
+</ul>
+
+<pre><code>ssh localhost  
+</code></pre>
+
+<ol>
+<li>执行退出命令;</li>
+</ol>
+
+<pre><code>exit  
+</code></pre>
+
+<h3>
+<a id="user-content-4安装hadoop" class="anchor" href="#4%E5%AE%89%E8%A3%85hadoop" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.安装hadoop</h3>
+
+<ul>
+<li>把hadoop解压到/usr/local下:</li>
+</ul>
+
+<pre><code>wget http://apache.fayea.com/hadoop/common/stable/hadoop-2.6.0.tar.gz
+sudo tar -zxvf hadoop-2.6.0.tar.gz  
+sudo mv hadoop-2.6.0 /usr/local/hadoop  
+sudo chmod -R 775 /usr/local/hadoop  
+sudo chown -R hadoop:hadoop /usr/local/hadoop  //否则ssh会拒绝访问  
+</code></pre>
+
+<ul>
+<li>配置</li>
+</ul>
+
+<p>修改bashrc的配置：</p>
+
+<pre><code>sudo vim ~/.bashrc  
+</code></pre>
+
+<p>在文件末尾添加：</p>
+
+<pre><code>#HADOOP VARIABLES START  
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_25  
+
+export HADOOP_INSTALL=/usr/local/hadoop  
+
+export PATH=$PATH:$HADOOP_INSTALL/bin  
+export PATH=$PATH:$JAVA_HOME/bin   
+export PATH=$PATH:$HADOOP_INSTALL/sbin  
+export HADOOP_MAPRED_HOME=$HADOOP_INSTALL  
+export HADOOP_COMMON_HOME=$HADOOP_INSTALL  
+export HADOOP_HDFS_HOME=$HADOOP_INSTALL  
+export YARN_HOME=$HADOOP_INSTALL  
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native  
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"  
+#HADOOP VARIABLES END  
+</code></pre>
+
+<p>执行下面命令使改动生效：</p>
+
+<pre><code>source ~/.bashrc
+</code></pre>
+
+<ul>
+<li>测试</li>
+</ul>
+
+<p>通过执行hadoop自带实例WordCount验证是否安装成功</p>
+
+<pre><code>cd /usr/local/hadoop  
+mkdir input  
+cp README.txt input  
+</code></pre>
+
+<p>在hadoop目录下执行WordCount：</p>
+
+<pre><code>hadoop jar share/hadoop/mapreduce/sources/hadoop-mapreduce-examples-2.6.0-sources.jar org.apache.hadoop.examples.WordCount input output  
+</code></pre>
+
+<h4>
+<a id="user-content-5-hadoop伪分布式配置" class="anchor" href="#5-hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E9%85%8D%E7%BD%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. Hadoop伪分布式配置</h4>
+
+<p>sudo vim /usr/local/hadoop/etc/hadoop/core-site.xml</p>
+
+<pre><code>&lt;configuration&gt;
+    &lt;property&gt;
+        &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
+        &lt;value&gt;/usr/local/hadoop/tmp&lt;/value&gt;
+        &lt;description&gt;Abase for other temporary directories.&lt;/description&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;fs.defaultFS&lt;/name&gt;
+        &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;
+    &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre>
+
+<p>sudo vim /usr/local/hadoop/etc/hadoop/yarn-site.xml</p>
+
+<pre><code>&lt;property&gt;
+&lt;name&gt;yarn.resourcemanager.hostname&lt;/name&gt;
+&lt;value&gt;master&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;description&gt;The address of the applications manager interface in the RM.&lt;/description&gt;
+    &lt;name&gt;yarn.resourcemanager.address&lt;/name&gt;
+    &lt;value&gt;${yarn.resourcemanager.hostname}:8032&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;description&gt;The address of the scheduler interface.&lt;/description&gt;
+    &lt;name&gt;yarn.resourcemanager.scheduler.address&lt;/name&gt;
+    &lt;value&gt;${yarn.resourcemanager.hostname}:8030&lt;/value&gt;
+  &lt;/property&gt;
+&lt;property&gt;
+    &lt;description&gt;The http address of the RM web application.&lt;/description&gt;
+    &lt;name&gt;yarn.resourcemanager.webapp.address&lt;/name&gt;
+    &lt;value&gt;${yarn.resourcemanager.hostname}:8088&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;description&gt;The https adddress of the RM web application.&lt;/description&gt;
+    &lt;name&gt;yarn.resourcemanager.webapp.https.address&lt;/name&gt;
+    &lt;value&gt;${yarn.resourcemanager.hostname}:8090&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;yarn.resourcemanager.resource-tracker.address&lt;/name&gt;
+    &lt;value&gt;${yarn.resourcemanager.hostname}:8031&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;description&gt;The address of the RM admin interface.&lt;/description&gt;
+    &lt;name&gt;yarn.resourcemanager.admin.address&lt;/name&gt;
+    &lt;value&gt;${yarn.resourcemanager.hostname}:8033&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+   &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;
+   &lt;value&gt;mapreduce_shuffle&lt;/value&gt;
+&lt;/property&gt;
+</code></pre>
+
+<p>cp /usr/local/hadoop/etc/hadoop/mapred-site.xml.template /usr/local/hadoop/etc/hadoop/mapred-site.xml
+sudo vim /usr/local/Hadoop/etc/hadoop/mapred-site.xml  //伪分布式不用配</p>
+
+<pre><code>&lt;property&gt;
+    &lt;name&gt;mapreduce.framework.name&lt;/name&gt;
+    &lt;value&gt;yarn&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+  &lt;name&gt;mapreduce.jobhistory.address&lt;/name&gt;
+  &lt;value&gt;master:10020&lt;/value&gt;
+  &lt;description&gt;MapReduce JobHistory Server IPC host:port&lt;/description&gt;
+&lt;/property&gt;
+&lt;property&gt;
+  &lt;name&gt;mapreduce.jobhistory.webapp.address&lt;/name&gt;
+  &lt;value&gt;master:19888&lt;/value&gt;
+  &lt;description&gt;MapReduce JobHistory Server Web UI host:port&lt;/description&gt;
+&lt;/property&gt;
+</code></pre>
+
+<p>sudo vim /usr/local/hadoop/etc/hadoop/hdfs-site.xml</p>
+
+<pre><code>&lt;configuration&gt;
+&lt;property&gt;
+        &lt;name&gt;dfs.replication&lt;/name&gt;
+        &lt;value&gt;1&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt;
+        &lt;value&gt;file:/usr/local/hadoop/dfs/name&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;
+        &lt;value&gt;file:/usr/local/hadoop/dfs/data&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;                 //这个属性节点是为了防止后面eclopse存在拒绝读写设置的
+            &lt;name&gt;dfs.permissions&lt;/name&gt;
+            &lt;value&gt;false&lt;/value&gt;
+     &lt;/property&gt;
+ &lt;/configuration&gt;
+</code></pre>
+
+<p>sudo gedit /usr/local/hadoop/etc/hadoop/masters 添加：localhost</p>
+
+<p>sudo gedit /usr/local/hadoop/etc/hadoop/slaves  添加：localhost</p>
+
+<p>关于配置的一点说明：上面只要配置 fs.defaultFS 和 dfs.replication 就可以运行，不过有个说法是如没有配置 hadoop.tmp.dir 参数，此时 Hadoop 默认的使用的临时目录为 /tmp/hadoo-hadoop，而这个目录在每次重启后都会被干掉，必须重新执行 format 才行（未验证），所以伪分布式配置中最好还是设置一下。</p>
+
+<p>配置完成后，首先在 Hadoop 目录下创建所需的临时目录：</p>
+
+<pre><code>cd /usr/local/hadoop
+mkdir tmp dfs dfs/name dfs/data
+</code></pre>
+
+<p>修改pid目录位置（可以不做）</p>
+
+<p>vi hadoop-env.sh</p>
+
+<pre><code>export HADOOP_PID_DIR=/usr/local/hadoop-2.6.0/pid
+</code></pre>
+
+<p>vi mapred-env.sh</p>
+
+<pre><code>export HADOOP_MAPRED_PID_DIR=/usr/local/hadoop-2.6.0/pid
+</code></pre>
+
+<p>yarn-env.sh</p>
+
+<pre><code>export YARN_PID_DIR=/usr/local/hadoop-2.6.0/pid  
+</code></pre>
+</article></body></html>

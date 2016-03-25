@@ -268,37 +268,9 @@ vim etc/hadoop/hadoop-env.sh
 
 开启Jobhistory
 
-[html] view plain copy 在CODE上查看代码片派生到我的代码片
 sbin/mr-jobhistory-daemon.sh  start historyserver  
-<a target=_blank href="http://master:19888/">http://master:19888/</a>  
-
 
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_PREFIX/lib:$HADOOP_PREFIX/lib/native"
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_PREFIX/lib:$HADOOP_PREFIX/lib/native"
 
-
-16/01/20 16:13:32 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-Starting namenodes on [Java HotSpot(TM) Client VM warning: You have loaded library /usr/local/hadoop/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
-It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
-localhost]
-sed: -e 表达式 #1, 字符 6: “s”的未知选项↵
-warning:: ssh: Could not resolve hostname warning:: Name or service not known
--c: Unknown cipher type 'cd'
-Java: ssh: Could not resolve hostname Java: Name or service not known
-it: ssh: Could not resolve hostname it: Name or service not known
-It's: ssh: Could not resolve hostname It's: Name or service not known
-HotSpot(TM): ssh: Could not resolve hostname HotSpot(TM): Name or service not known
-root@localhost's password: link: ssh: Could not resolve hostname link: Name or service not known
-<libfile>',: ssh: Could not resolve hostname <libfile>',: Name or service not known
-'execstack: ssh: Could not resolve hostname 'execstack: Name or service not known
-noexecstack'.: ssh: Could not resolve hostname noexecstack'.: Name or service not known
-to: ssh: connect to host to port 22: Connection refused
-'-z: ssh: Could not resolve hostname '-z: Name or service not known
-
-修改etc/profile配置文件，添加：
-
-export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
-export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
-
-export HADOOP_COMMON_LIB_NATIVE_DIR=${HADOOP_PREFIX}/lib/native
 
